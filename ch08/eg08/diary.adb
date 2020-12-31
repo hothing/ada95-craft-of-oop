@@ -1,0 +1,1 @@
+../eg04/diary.adb

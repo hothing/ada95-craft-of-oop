@@ -1,0 +1,24 @@
+project Ada_Craft_19 is
+
+   for Source_Dirs use ("ch19/eg06");
+   for Object_Dir use "obj";
+   for Main use ("spreadsheet.adb");
+
+   package Compiler is
+      for Switches ("ada") use ("-gnat95", "-g", "-gnato", "-fstack-check", "-gnata");
+   end Compiler;
+
+   package Builder is
+      for Switches ("ada") use ("-g");
+   end Builder;
+
+   package Binder is
+      for Switches ("ada") use ("-E");
+   end Binder;
+
+   package Linker is
+      for Switches ("ada") use ("-g");
+   end Linker;
+
+end Ada_Craft_19;
+

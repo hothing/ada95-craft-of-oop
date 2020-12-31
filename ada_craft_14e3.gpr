@@ -1,0 +1,20 @@
+project Ada_Craft_14E3 is
+
+   for Source_Dirs use ("ch14/eg03");
+   for Object_Dir use "obj/ch14e3";
+   for Main use ("diary.adb");
+
+   package Builder is
+      for Switches ("ada") use ("-g");
+   end Builder;
+
+   package Compiler is
+      for Switches ("ada") use ("-g", "-gnat95");
+   end Compiler;
+
+   package Linker is
+      for Switches ("ada") use ("-g");
+   end Linker;
+
+end Ada_Craft_14E3;
+

@@ -1,0 +1,26 @@
+with "ada_craft_19.gpr";
+with "ada_craft_18.gpr";
+with "ada_craft_17.gpr";
+with "ada_craft_16e2.gpr";
+with "ada_craft_16e1.gpr";
+with "ada_craft_15e2.gpr";
+with "ada_craft_15e1.gpr";
+with "ada_craft_14e3.gpr";
+with "ada_craft_14e2.gpr";
+with "ada_craft_14e1.gpr";
+with "ada_craft_13e7.gpr";
+with "ada_craft_13e6.gpr";
+with "ada_craft_13e5.gpr";
+with "ada_craft_13e4.gpr";
+with "ada_craft_13e3.gpr";
+with "ada_craft_13e2.gpr";
+with "ada_craft_13e1.gpr";
+
+project Default is
+
+   for Source_Dirs use ("src");
+   for Object_Dir use "obj";
+   for Main use ("main.adb");
+
+end Default;
+

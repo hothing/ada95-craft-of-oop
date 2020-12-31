@@ -1,0 +1,1 @@
+../eg06/weekday.adb
