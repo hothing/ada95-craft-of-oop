@@ -1,0 +1,19 @@
+project Ada_Craft_03E13 is
+
+   for Source_Dirs use ("ch03/eg13");
+   for Object_Dir use "obj/ch03e13";
+   for Main use ("get_integer.adb");
+
+   package Builder is
+      for Switches ("ada") use ("-g");
+   end Builder;
+
+   package Compiler is
+      for Switches ("ada") use ("-g", "-gnat95");
+   end Compiler;
+
+   package Linker is
+      for Switches ("ada") use ("-g");
+   end Linker;
+
+end Ada_Craft_03E13;
