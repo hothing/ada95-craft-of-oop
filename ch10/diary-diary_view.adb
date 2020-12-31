@@ -126,7 +126,6 @@ package body Diary_View is
 
     procedure List_Appointments (Diary : in JE.Diaries.Diary_Type) is
         use JE.Diaries, JE.Appointments;
-        Appt : Appointment_Type;
     begin
         if Size(Diary) = 0 then
             Put_Line ("No appointments found.");

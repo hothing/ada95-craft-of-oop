@@ -1,0 +1,19 @@
+project Ada_Craft_07E5 is
+
+   for Source_Dirs use ("ch07/eg05");
+   for Object_Dir use "obj/ch07e5";
+   for Main use ("weekday.adb");
+
+   package Builder is
+      for Switches ("ada") use ("-g");
+   end Builder;
+
+   package Compiler is
+      for Switches ("ada") use ("-g", "-gnat95");
+   end Compiler;
+
+   package Linker is
+      for Switches ("ada") use ("-g");
+   end Linker;
+
+end Ada_Craft_07E5;

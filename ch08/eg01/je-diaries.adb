@@ -49,7 +49,7 @@ package body JE.Diaries is
             Count : Natural := 0;
         end record;
 
-    Diary : Diary_Type (10);
+    --Diary : Diary_Type (10);
 
     procedure Load_Diary is
     begin
