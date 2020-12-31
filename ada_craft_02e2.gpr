@@ -1,0 +1,19 @@
+project Ada_Craft_02E2 is
+
+   for Source_Dirs use ("ch02/eg02");
+   for Object_Dir use "obj/ch02e2";
+   for Main use ("hello.adb");
+
+   package Builder is
+      for Switches ("ada") use ("-g");
+   end Builder;
+
+   package Compiler is
+      for Switches ("ada") use ("-g", "-gnat95");
+   end Compiler;
+
+   package Linker is
+      for Switches ("ada") use ("-g");
+   end Linker;
+
+end Ada_Craft_02E2;
