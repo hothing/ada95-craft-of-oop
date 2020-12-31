@@ -1,0 +1,19 @@
+project Ada_Craft_06E1 is
+
+   for Source_Dirs use ("ch06/eg01");
+   for Object_Dir use "obj/ch06e1";
+   for Main use ("sort.adb");
+
+   package Builder is
+      for Switches ("ada") use ("-g");
+   end Builder;
+
+   package Compiler is
+      for Switches ("ada") use ("-g", "-gnat95");
+   end Compiler;
+
+   package Linker is
+      for Switches ("ada") use ("-g");
+   end Linker;
+
+end Ada_Craft_06E1;
